@@ -59,6 +59,7 @@ codirector, % Uncomment to add a codirector to the title page
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 0      & Creación del documento                                 &\fechaInicioName \\ \hline
 1      & Se completa hasta el punto 8 inclusive                & {02} de {agosto} de 2024 \\ \hline
+2      & Se completa hasta el punto 15 inclusive                & {09} de {agosto} de 2024 \\ \hline
 %2      & Se completa hasta el punto 9 inclusive
 %		  Se puede agregar algo más \newline
 %		  En distintas líneas \newline
@@ -84,7 +85,7 @@ Buenos Aires, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con el \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en la implementación de una aplicación que utilice inteligencia artificial para brindar retroalimentación a los profesores del Laboratorio de Sistemas Embebidos sobre las clases que dictan. El trabajo tendrá un presupuesto preliminar estimado de 665 horas y un costo estimado de \$ 13 858.74, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública en \fechaFinalName.
+Por medio de la presente se acuerda con la \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} se titulará ``\ttitle'' y consistirá en la implementación de una aplicación que utilice inteligencia artificial para brindar retroalimentación a los profesores del Laboratorio de Sistemas Embebidos sobre las clases que dictan. El trabajo tendrá un presupuesto preliminar estimado de 665 horas y un costo estimado de \$ 13 858.74, con fecha de inicio el \fechaInicioName\hspace{1px} y fecha de presentación pública en \fechaFinalName.
 
 Se adjunta a esta acta la planificación inicial.
 
@@ -290,13 +291,13 @@ Los entregables del proyecto son:
 	\item Plan de proyecto: es el presente documento que especifica la descripción del proyecto, alcance, requerimientos, recursos, entre otros datos necesarios para su ejecución.
 	\item Aplicación en producción: se entregará la aplicación web funcionando correctamente según los requerimientos expuestos en este documento.
 	\item Memoria del trabajo final: se entregará un documento con el detalle del diseño e implementación de la solución, así como los resultados obtenidos.
-	\item Guía de usuario: se realizará un manual para que usuarios sepan cómo utilizar la aplicación.
+	\item Guía de usuario: se realizará un manual para que los usuarios sepan cómo utilizar la aplicación.
 \end{itemize}
 
 \section{9. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-En esta sección, se detalla las tareas que se tendrán que realizar para cumplir con los requerimientos, así como un estimado de las horas que llevará completarlas:
+En esta sección, se detallan las tareas que se tendrán que realizar para cumplir con los requerimientos, así como un estimado de las horas que llevará completarlas:
 
 \begin{enumerate}
 \item Planificación y elección de métricas (50 h)
@@ -308,27 +309,27 @@ En esta sección, se detalla las tareas que se tendrán que realizar para cumpli
 \item Evaluar lenguaje natural (90 h)
     \begin{enumerate}
     \item Completar información de transcripciones de las clases (15 h)
-    \item Cargar transcripciones a base de datos (15 h)
+    \item Cargar transcripciones a la base de datos (15 h)
     \item Implementar flujo de evaluación de lenguaje natural con APIs de LLMs (30 h)
-    \item Cálculo de métricas relacionadas al contenido de la clase (15 h)
+    \item Calcular métricas relacionadas al contenido de la clase (15 h)
     \item Evaluar resultados del modelo (15 h)
     \end{enumerate}
 \item Evaluar audios y expresión oral (120 h)
     \begin{enumerate}
     \item Investigar modelos de evaluación de expresión oral (30 h)
     \item Preprocesar audio (20 h)
-    \item Cargar audios a base de datos (10 h)
-    \item Implementar modelo de evaluación de expresión verbal (30 h)
+    \item Cargar audios a la base de datos (10 h)
+    \item Implementar modelo de evaluación de expresión oral (30 h)
     \item Cálculo de métricas relacionadas a expresión oral (15 h)
     \item Evaluar resultados del modelo (15 h)
     \end{enumerate}
 \item Evaluar videos y expresión no verbal (120 h)
     \begin{enumerate}
     \item Investigar modelos de visión por computadora (30 h)
-    \item Preprocesar video (20 h)
-    \item Cargar videos a base de datos (10 h)
+    \item Preprocesar los videos (20 h)
+    \item Cargar los videos a la base de datos (10 h)
     \item Implementar modelo de visión por computadora (30 h)
-    \item Cálculo de métricas relacionadas a los videos y la expresión no verbal (15 h)
+    \item Cálculo de métricas relacionadas a los videos y a la expresión no verbal (15 h)
     \item Evaluar resultados del modelo (15 h)
     \end{enumerate}
 \item Métricas de encuestas, participación y resultados finales (75 h)
@@ -364,11 +365,11 @@ Cantidad total de horas: 665 h.
 \section{10. Diagrama de Activity On Node}
 \label{sec:AoN}
 
-A continuación, en la figura \ref{fig:AoN}, se muestra el diagrama de Activity on Node del proyecto. El diagrama agrupa las tareas según los grupos de tareas presentados en la sección anterior para simplificarlo. Únicamente el último grupo (Redacción de documentos y defensa) fue separado en 3 subgrupos para reflejar sus dependencias de esta forma:
+A continuación, en la figura \ref{fig:AoN}, se muestra el diagrama de Activity on Node del proyecto. El diagrama agrupa las tareas según los grupos presentados en la sección anterior para simplificarlo. Únicamente el último grupo (Redacción de documentos y defensa) fue separado en 3 subgrupos de esta forma para poder graficar sus dependencias en el diagrama:
 \begin{itemize}
     \item Redacción de documentos (Parte 1): involucra las tareas de redactar informe de avance y redactar primera parte de la memoria del proyecto (Taller A).
     \item Redacción de documentos (Parte 2): involucra las tareas de redactar segunda parte de la memoria del proyecto (Taller B) y redactar manual de uso.
-    \item Presentación y defensa: involucra redactar la presentación del proyecto y la defensa.
+    \item Presentación y defensa: involucra armar la presentación del proyecto y realizar la defensa.
 \end{itemize}
 
 
@@ -379,9 +380,9 @@ A continuación, en la figura \ref{fig:AoN}, se muestra el diagrama de Activity 
 \label{fig:AoN}
 \end{figure}
 
-Como se puede observar, la ruta crítica empieza por la planificación luego hay un empate entre evaluar los audios y expresión oral vs. evaluar los videos y expresión no verbal. Cualquiera de los 2 modelos podría retrasar el desarrollo del proyecto. Posteriormente, sigue el desarrollo de las métricas adicionales y resultados finales, el desarrollo de la aplicación y la presentación y defensa.
+Como se puede observar, la ruta crítica empieza por la planificación luego hay un empate entre evaluar los audios y expresión oral vs. evaluar los videos y expresión no verbal. Cualquiera de los 2 modelos podría retrasar el desarrollo del proyecto. Posteriormente, sigue el desarrollo de las métricas adicionales y resultados finales, el desarrollo de la aplicación, y la presentación y defensa.
 
-Cabe resaltar que este diagrama muestra que el proyecto se podría completar en menos tiempo (355 horas) pero en un escenario donde se tendrían que trabajar tres modelos en paralelo, lo que exigiría más de una persona trabajando en el proyecto. Debido a que esto no se cumple ya que el proyecto está a cargo de una persona únicamente, en la siguiente sección, se muestra el diagrama de Gantt considerando un avance en su mayoría serial y no paralelo.
+Cabe resaltar que este diagrama muestra que el proyecto se podría completar en menos tiempo (355 horas) pero en un escenario donde se tendrían que trabajar tres modelos en paralelo, lo que exigiría más de una persona trabajando en el proyecto. Debido a que esto no se cumple ya que el proyecto está a cargo de una sola persona, en la siguiente sección, se muestra el diagrama de Gantt considerando un avance en su mayoría serial y no paralelo.
 
 \section{11. Diagrama de Gantt}
 \label{sec:gantt}
@@ -496,7 +497,7 @@ Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
       1: dificultad para procesar las transcripciones faltantes de las clases. &  8 &  4 &   32 &  8 &  2 & 16   \\ \hline
       2: que el procesamiento de audio y video tome más tiempo del estimado. &  8 &  5 &   40 &  8 &  3 & 24   \\ \hline
       3: que la cantidad necesaria de GPUs para el entrenamiento de los modelos sea mayor. &  8 &  3 &   24 &   &   &     \\ \hline
-      4:que no existan modelos preentrenados capaces de evaluar audio y video de la forma que se requiere. &  6 &  4 &   24 &    &    &      \\ \hline
+      4: que no existan modelos preentrenados capaces de evaluar audio y video de la forma que se requiere. &  6 &  4 &   24 &    &    &      \\ \hline
       5: que las computadoras que se tienen disponibles se malogren. &  8 &  2 &   16 &    &    &      \\ \hline
 \end{tabularx}%
 \end{table}
@@ -530,7 +531,7 @@ En esta sección se presentan las acciones de verificación y validación de cal
 			\item El sistema debe tener una base de datos que permita almacenar datos no estructurados y estructurados.
                     \begin{itemize}
                     	\item Verificar que los programas de bases de datos seleccionados permitan ambos tipos de datos.
-                    	\item Validar con una prueba de carga de datos estructurados y no estructurados.
+                    	\item Validar con una prueba la carga de datos estructurados y no estructurados.
                     \end{itemize}
                 \item La base de datos debe estar organizada de tal forma que se pueda diferenciar la data en bruto de la procesada. Para esto, se debe usar una arquitectura de base de datos de tres capas.
                     \begin{itemize}
@@ -540,7 +541,7 @@ En esta sección se presentan las acciones de verificación y validación de cal
 			\item Se deben utilizar por lo menos tres fuentes de información.
                     \begin{itemize}
                     	\item Verificar la cantidad de fuentes de información utilizadas por los modelos.
-                    	\item Validar patrones de diferentes fuentes de información que son tomados en cuenta por el modelo para dar recomendaciones.
+                    	\item Validar que el modelo toma en cuenta patrones de diferentes fuentes de información para dar recomendaciones.
                     \end{itemize}
 			\item Los resultados finales deben ser presentados de forma que sean fáciles de interpretar por los usuarios.
                     \begin{itemize}
